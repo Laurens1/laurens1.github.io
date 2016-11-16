@@ -1,0 +1,202 @@
+* {
+	/* Dit maakt het makkelijker om te rekenen met de breedte.
+	Speciaal de navigatiebalk knoppen. */
+	box-sizing: border-box;
+	font-family: sans-serif; /* Alle tekst is sans-serif */
+}
+
+html {
+	background-image: url("iPhone.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Achtergrond niet laten scrollen. */
+}
+
+body {
+	max-width:1024px;
+	margin: 0 auto;
+}
+
+
+table, th, td {
+    border: 1px solid #99ccff;
+    border-collapse: collapse; /* Alle randen in de tabel */
+}
+
+tr:nth-child(even) {/* Alle rijen die een even getal zijn worden blauw*/
+    background-color: #99ccff;
+}
+
+th { /* Tekst links uitlijnen in eerste rij van de tabel */
+	text-align: left;
+}
+
+th:first-child, td:first-child { /* Eerste kolom van elke tabel */
+	width: 200px;
+}
+
+th::nth-child(2), td::nth-child(2){ /* Tweede kolom van de prijstabel */
+	width: 100px;
+}
+
+
+button { /* Voor alle buttons met class="button"*/
+    background-color: white;
+    border: 2px solid #66b3ff;
+    color: #66b3ff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	min-width: 200px;
+	-webkit-transition-duration: 0.4s; /* Effect op de button*/
+    transition-duration: 0.4s; /* Effect duurt 0,4 sec*/
+}
+
+button:hover {
+	background-color:#66b3ff;
+	color: white
+}
+
+#banner {
+	float: top;
+	width:100%;
+	height: 100px;
+	background-color:#252D3A;
+	margin:0;
+	padding:0;
+}
+
+#banner img {
+	float: left;
+	height: 100px;
+	padding: 5px 0px;
+	margin:0;
+}
+
+#banner h1
+{
+	height: 100%;
+	float: left;
+	display: inline-block;
+	padding: 33px 0px;
+	margin: 0;
+	color: white;
+}
+
+#navigatiebalk
+{
+	float:top;
+	margin:0;
+	padding:0;
+	background-color: #66b3ff;
+}
+
+#navigatiebalk a {
+	white-space: nowrap; /* Tekst nooit op tweede regel zetten. */
+	background-color: #66b3ff; /*lichtblauw*/
+	width:20%; /* Precies een vijfde van de balk per knop. */
+	height:100%; /* Dit zorgt ervoor dat alle knoppen even hoog zijn. */
+	display: inline-block;  /* Dit is nodig, anders gaat de weergave van links alsof het tekst is. */
+	color: white;
+	text-align: center;
+	padding:10px;
+	margin:0;
+	border:0;
+	text-decoration: none;
+	font-size: 18pt; /* Tekst misschien iets kleiner voor smallere schermen. */
+	
+}
+
+#navigatiebalk .hier {
+	background-color: #0080ff;/* Donkerblauw voor hover of voor de pagina waar je op bent */
+	color: white;
+}	
+
+#navigatiebalk a:hover{
+	background-color: #0080ff;
+	color: white;
+}
+
+#inhoud1 {
+	padding: 20px;
+	width:100%;
+	background-image: url(iPhone-broken.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height:600px;
+}
+
+#inhoud {
+	padding: 20px;
+	width:100%;
+	background-color:white;
+	min-height:600px;
+}
+
+#download h3{
+	margin-bottom:2px;	
+}
+
+#vraag{
+	margin: 7px;
+	text-decoration: none;
+	color: #0080ff;
+	cursor: pointer;
+}
+
+#bodemgrijs {
+	padding: 10px;
+	width:100%;
+	background-color:#252D3A;/*donkergrijs*/
+	height:100px;
+	color: white;
+}
+
+#inhoud1 h1{
+	color: white;
+	text-align: center;
+	margin-top: 120px;
+	font-size: 70px
+}
+
+#inhoud1 p{
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+
+#brief {
+	max-width: 400px;
+	width: auto;
+}
+
+/* Maak alle invoervelden in het "brief" formulier even breedt. */
+#brief > input /* Anders pakt hij ook de checkbox in de label. */, #brief textarea, #brief label {
+	display: block; /* Anders gedraagt het label zich als tekst */
+	width:100%;
+    background-color: white;
+    border: 2px solid #66b3ff;
+    color: #66b3ff;
+	margin: 1% 0;
+	padding: 5px;
+}
+
+#brief textarea {
+	min-height:70px;
+}
+
+#brief input:checked + button
+{
+	color: red;
+}
+
+.in-tekst{
+	text-decoration: none;
+	color: #0080ff;
+	cursor: pointer;
+}

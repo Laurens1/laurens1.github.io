@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title>SchermInkoop</title>
+		<script src="https://use.fontawesome.com/ce0c1526ac.js"></script>
+	</head>
+	<body>
+		<div id="banner">
+			<a href="SchermInkoop.html">
+				<img src="logo_zwart.jpg" />
+				<h1>SchermInkoop.com</h1>
+			</a>
+		</div>
+		<div id="navigatiebalk">
+			<a href="SchermInkoop.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a><a href="Apple.html"><i class="fa fa-apple" aria-hidden="true"></i> Apple</a><a href="Samsung.html"><i class="fa fa-mobile" aria-hidden="true"></i> Samsung</a><a href="Prijslijst.html"><i class="fa fa-eur" aria-hidden="true"></i> Prijslijst</a><a href="HoeWerktHet.html"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Hoe werkt het?</a>
+		</div>
+		<div id="inhoud">
+			<h1>Envelop bestellen</h1>
+				<form id="brief" method="post" action="https://formspree.io/laurens.neinders@gmail.com">
+					<input type="text" name="voornaam" placeholder="Jouw voornaam" autofocus required>
+					<input type="text" name="achternaam" placeholder="Jouw achternaam" required>
+					<input type="email" name="email" placeholder="Jouw email" required>
+					<input type="text" name="straat" placeholder="Jouw straat en huisnummer" required>
+					<input type="text" name="postcode" placeholder="Jouw postcode" required title="Postcode bijvoorbeeld: 1234 AB" pattern="[0-9]{4} *[A-Z]{2}"> <!-- Ingewikkeld ding zodat je geen ongeldige postcode kunt invoeren.!-->
+					<input type="text" name="woonplaats" placeholder="Jouw woonplaats" required>
+					<label>
+						<input type="checkbox" name="bevestiging" required>
+						Ja, ik wil een envelop bestellen.
+					</label>
+					<button type="submit">Bestellen</button>
+				</form>
+		</div>
+		<div id="bodemgrijs">
+			© Laurens Neinders 2016 – Alle rechten voorbehouden
+		</div>
+	</body>
+</html>
